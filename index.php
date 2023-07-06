@@ -30,6 +30,7 @@ $resultado = $sql->fetchAll(PDO::FETCH_ASSOC);
   <div class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
       <a href="#" class="navbar-brand">
+        <img src="images/logo.png" width="75" height="100" alt="">
         <strong>Music Pro</strong>
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">

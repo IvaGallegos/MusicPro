@@ -26,7 +26,7 @@ if($id_transaccion == ''){
             $sqlDet = $con->prepare("SELECT nombre, precio, cantidad FROM detalle_compra WHERE id_compra = ?");
             $sql->execute([$id_compra]);
 }else{
-    $error = 'Error al comprobar la compra'
+    $error = 'Error al comprobar la compra';
 }
 }
 
@@ -48,7 +48,7 @@ if($id_transaccion == ''){
 <header>
   <div class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
-      <a href="#" class="navbar-brand">
+      <a href="index.php" class="navbar-brand">
         <strong>Music Pro</strong>
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
@@ -58,7 +58,7 @@ if($id_transaccion == ''){
       <div class="collapse navbar-collapse" id="navbarHeader"></div>
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-                <a href="#" class="nav-link-active">Catalogo</a>
+                <a href="index.php" class="nav-link-active">Catalogo</a>
             </li>
             <li class="nav-item">
                 <a href="#" class="nav-link">Contacto</a>
@@ -73,13 +73,6 @@ if($id_transaccion == ''){
 
 <main>
     <div class="container">
-
-
-
-
-
-
-
 
         <?php if(strlen($error) > 0) { ?>
             <div class="row">
